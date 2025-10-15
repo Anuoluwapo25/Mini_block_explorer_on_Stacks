@@ -1,10 +1,8 @@
-// Input to our function
 interface FetchAddressTransactionsArgs {
   address: string;
   offset?: number;
 }
 
-// Output from our function
 export interface FetchAddressTransactionsResponse {
   limit: number;
   offset: number;
@@ -21,7 +19,6 @@ export interface FetchAddressTransactionsResponse {
   }>;
 }
 
-// Intermediary types of transactions we get from Hiro's APIs
 interface BaseTransaction {
   tx_id: string;
   nonce: number;

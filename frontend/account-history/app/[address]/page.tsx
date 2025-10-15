@@ -1,5 +1,6 @@
-import { TransactionsList } from "@/components/txns-list";
-import { fetchAddressTransactions } from "@/lib/fetch-address-transactions";
+import { TransactionsList } from "../../components/txns-list";
+import { fetchAddressTransactions } from "../../lib/fetch-address-transactions";
+
 import { ExternalLinkIcon } from "lucide-react";
 import Link from "next/link";
 
@@ -8,10 +9,8 @@ export default async function Activity({
 }: {
   params: Promise<{ address: string }>;
 }) {
-  // params contains parameters we can parse from the URL Route
   const { address } = await params;
 
-  // Once we know the address, we fetch the initial 20 transactions
   const initialTransactions = await fetchAddressTransactions({ address });
 
   return (

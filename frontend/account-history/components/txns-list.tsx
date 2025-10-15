@@ -4,7 +4,7 @@
 import {
   fetchAddressTransactions,
   type FetchAddressTransactionsResponse,
-} from "@/lib/fetch-address-transactions";
+} from "../lib/fetch-address-transactions";
 import { TransactionDetail } from "./txn-details";
 import { useState } from "react";
 

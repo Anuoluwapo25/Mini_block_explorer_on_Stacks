@@ -1,6 +1,6 @@
 "use client";
 
-import { useStacks } from "@/hooks/use-stacks";
+import { useStacks } from "../hooks/use-stacks";
 import { redirect } from "next/navigation";
 
 export default function Home() {

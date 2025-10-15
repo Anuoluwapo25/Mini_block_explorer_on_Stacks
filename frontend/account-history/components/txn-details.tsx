@@ -1,8 +1,8 @@
 import type {
   FetchAddressTransactionsResponse,
   Transaction,
-} from "@/lib/fetch-address-transactions";
-import { abbreviateTxnId, abbreviateAddress } from "@/lib/stx-utils";
+} from "../lib/fetch-address-transactions";
+import { abbreviateTxnId, abbreviateAddress } from "../lib/stx-utils";
 import {
   ActivityIcon,
   ArrowLeftRightIcon,
